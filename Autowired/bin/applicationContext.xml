@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+<bean id="address12345" class="com.example.Address">
+<property name="city" value="Mumbai"/>
+</bean>
+
+<bean id="address6789" class="com.example.Address">
+<property name="city" value="Pune"/>
+</bean>
+
+<bean id="emp" class="com.example.Employee">
+<property name="empId" value="101"/> <!-- setter injection -->
+<property name="name" value="Sachin"/>
+<!-- <property name="address"  ref="address"/> -->
+</bean>
+
+<bean id="emp2" class="com.example.Employee">
+<property name="empId" value="101"/> <!-- setter injection -->
+<property name="name" value="Sachin"/>
+<!-- <property name="address"  ref="address"/> -->
+</bean>
+
+<context:annotation-config/>
+</beans>
